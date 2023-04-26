@@ -12,7 +12,7 @@ export default function About() {
                     I created this as a personal project, and I have also deployed this project
                     so people can use it and mainly the developers can who are learning AI can learn 
                     from this project and make their own AI or they can also improve in this project.
-                    This is an open source project, The code is available on the GitHub - <a href="https://github.com/harshbhatt7585/YogaIntelliJ">https://github.com/harshbhatt7585/YogaIntelliJ</a>
+                    This is an open source project, The code is available on the GitHub - <a> href="https://github.com/Bc-p1/Pose_Trainer.git"</a>
                     
                     This AI first predicts keypoints or coordinates of different parts of the body(basically where
                     they are present in an image) and then it use another classification model to classify the poses if 
@@ -24,15 +24,16 @@ export default function About() {
                     the keras/tensorflow model to tensorflowJS.
                 </p>
                 <div className="developer-info">
-                    <h4>About Developer</h4>
-                    <p className="about-content">I am Harsh, I am Full Stack Developer, AI Enthusiastic, Content Creator, Tutor,
-                        I love to work with technology and love to share on my youtube channel, 
-                        I hope this project will help you. 
+                    <h4>Developed by</h4>
+                    <p className="about-content">
+
+                        
                     </p>
+                    <h4>Reference</h4>
+                    <a href="https://arxiv.org/abs/2006.11718"><p className="about-content">[1] Steven Chen ,Richard R. Yang,”Pose Trainer: Correcting Exercise Posture using Pose Estimation”,arXiv:2006.11718v1 [cs.CV] 21 Jun 2020</p></a>
+                    <a href="https://www.itm-conferences.org/articles/itmconf/pdf/2021/05/itmconf_icacc2021_03031.pdf"><p  className="about-content">[2] Rahul Ravikant Kanase ,Akash Narayan Kumavat ,Rohit Datta Sinalkar ,Sakshi Somani ,”Pose Estimation and Correcting Exercise Posture” ,ITM Web of Conferences 40, 03031 (2021)</p></a>
                     <h4>Contact</h4>
-                    <a href="https://www.instagram.com/codedharsh75/"><p className="about-content">Instagram</p></a>
-                    <a href="https://www.youtube.com/channel/UCiD7kslR7lKSaPGSQ-heOWg"><p  className="about-content">Youtube</p></a>
-                    <a href="https://github.com/harshbhatt7585"><p  className="about-content">GitHub</p></a>
+                    <a href="https://github.com/Bbncp"><p  className="about-content">GitHub</p></a>
                 </div>
             </div>
         </div>
