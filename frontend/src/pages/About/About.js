@@ -25,6 +25,10 @@ export default function About() {
                 </p>
                 <div className="developer-info">
                     <h4>Developed by</h4>
+                    <a>Bibin C P   </a>
+                    <a>Muhammed Anas A K</a>
+                    <a>Muhammed Rashed C</a>
+                    <a>Sidharth</a>
                     <p className="about-content">
 
                         
