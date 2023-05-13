@@ -25,9 +25,9 @@ export default function About() {
                 </p>
                 <div className="developer-info">
                     <h4>Developed by</h4>
-                    <a>Bibin C P   </a>
-                    <a>Muhammed Anas A K</a>
-                    <a>Muhammed Rashed C</a>
+                    <p><a>Bibin C P </a> </p>
+                    <p><a>Muhammed Anas A K</a></p>
+                    <p><a>Muhammed Rashed C</a></p>
                     <a>Sidharth</a>
                     <p className="about-content">
 

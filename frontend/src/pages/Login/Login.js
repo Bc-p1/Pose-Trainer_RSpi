@@ -1,21 +1,23 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import '../../App.css'
+import './Login.css'
 
 export default function SignInPage() {
     return (
+        <div className="login-container">
+        <div className="login-card">
         <div className="text-center m-5-auto">
-            <h1>Sign in</h1>
-            <form action="/home">
+            <h1 className='login-title'>Sign in</h1>
+            <form className="login-form">
                 <p>
-                    <label>Username or email address</label><br/>
+                    <label  className="white-label">Username or email address</label><br/>
                     <input type="text" name="first_name" required />
                    
                 </p>
                 <p>
                     <label>Password</label>
-                    <Link to="/forget-password"><label className="right-label">Forget password?</label></Link>
+                    <Link to="/Forgot"><label className="right-label">Forget password?</label></Link>
                     <br/>
                     <input type="password" name="password" required />
                 </p>
@@ -25,10 +27,11 @@ export default function SignInPage() {
                 </p>
             </form>
             <footer>
-                <p>First time? <Link to="/Register">Create an account</Link>.</p>
+                <label className="white-label">First time? <Link to="/Register">Create an account</Link></label>
                 <p><Link to="/">Back to Homepage</Link>.</p>
             </footer>
-            
+        </div>
+        </div>
         </div>
     )
 }
