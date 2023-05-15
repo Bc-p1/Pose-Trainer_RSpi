@@ -2,14 +2,14 @@ import React from 'react';
 import './DoList.css';
 
 const yogaPoses = [
-  { name: 'Downward Dog', image: 'path/to/image1' },
-  { name: 'Warrior I', image: 'path/to/image2' },
-  { name: 'Warrior II', image: 'path/to/image3' },
-  { name: 'Triangle', image: 'path/to/image4' },
-  { name: 'Tree', image: 'path/to/image5' },
+  { name: 'Downward Dog', image: 'frontend/src/utils/temp/dog.png' },
+  { name: 'Warrior I', image: 'frontend/src/utils/temp/warrior.png' },
+  { name: 'Cobra', image: 'frontend/src/utils/temp/cobra.png' },
+  { name: 'Triangle', image: "frontend/src/utils/temp/triangle.png" },
+  { name: 'Tree', image: 'frontend/src/utils/temp/tree.png' },
   { name: 'Bridge', image: 'path/to/image6' },
   { name: 'Child\'s Pose', image: 'path/to/image7' },
-  { name: 'Corpse Pose', image: 'path/to/image8' },
+  { name: 'Shoulder Stand', image: 'path/to/image8' },
 ];
 
 const dailyWorkoutSchedule = [
