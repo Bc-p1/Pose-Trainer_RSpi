@@ -1,40 +1,43 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import MenuComponent from '../../components/MenuComponent/MenuComponent';
 
 import './Home.css'
 
 export default function Home() {
 
     return (
-        <div className='home-container'>
-            <div className='home-header'>
-                <h1 className='home-heading'>FitnessPoseTrainer</h1>
-                <Link to='/about'>
-                    <button 
-                        className="btn btn-secondary" 
-                        id="about-btn"
-                    >
-                        About
-                    </button>
-                </Link>
-            </div>
-
-            <h1 className="description">A realtime Yoga Trainer</h1>
-            <div className="home-main">
-                <div className="btn-section">
-                    <Link to='/start'>
+        <><div className="menu-container">
+            <MenuComponent />
+        </div><div className='home-container'>
+                <div className='home-header'>
+                    <h1 className='home-heading'>FitnessPoseTrainer</h1>
+                    <Link to='/about'>
                         <button
-                            className="btn start-btn"
-                        >Let's Start</button>
+                            className="btn btn-secondary"
+                            id="about-btn"
+                        >
+                            About
+                        </button>
                     </Link>
-                    <Link to='/tutorials'>
-                        <button
-                            className="btn start-btn"
-                        >Tutorials</button>
-                    </Link>
-
                 </div>
-            </div>
-        </div>
+
+                <h1 className="description">A realtime Yoga Trainer</h1>
+                <div className="home-main">
+                    <div className="btn-section">
+                        <Link to='/start'>
+                            <button
+                                className="btn start-btn"
+                            >Let's Start</button>
+                        </Link>
+                        <Link to='/tutorials'>
+                            <button
+                                className="btn start-btn"
+                            >Tutorials</button>
+                        </Link>
+
+                    </div>
+                </div>
+            </div></>
     )
 }

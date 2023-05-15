@@ -1,9 +1,11 @@
 import React from 'react'
-
+import MenuComponent from '../../components/MenuComponent/MenuComponent';
 import './About.css'
 
 export default function About() {
     return (
+        <div className="menu-container">
+            <MenuComponent />
         <div className="about-container">
             <h1 className="about-heading">About</h1>
             <div className="about-main">
@@ -40,6 +42,7 @@ export default function About() {
                     <a href="https://github.com/Bbncp"><p  className="about-content">GitHub</p></a>
                 </div>
             </div>
+        </div>
         </div>
     )
 }

@@ -1,6 +1,6 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-
+import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
+//import UserContext from 'frontend/src/components/Usercontext/Usercontext.js';
 import '../../App.css'
 
 export default function SignUpPage() {
@@ -18,6 +18,7 @@ export default function SignUpPage() {
                     <label>Email address</label><br/>
                     <input type="email" name="email" required />
                 </p>
+                
                 <p>
                     <label>Password</label><br/>
                     <input type="password" name="password" requiredc />

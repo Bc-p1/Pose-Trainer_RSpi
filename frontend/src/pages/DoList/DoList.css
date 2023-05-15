@@ -1,0 +1,30 @@
+.do-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .yoga-poses,
+  .workout-schedule {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .yoga-poses li,
+  .workout-schedule li {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .yoga-poses img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .workout-schedule .completed {
+    text-decoration: line-through;
+  }

@@ -3,11 +3,17 @@
     height: 100vh;
     background: linear-gradient(100deg, #374d39, #bb821a);
 }
+.menu-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 150;
+  }
 .about-heading {
     font-size: 54px;
     text-align: center;
     padding-top: 10px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: 'Raleway', sans-serif;
 }
 .about-main {
