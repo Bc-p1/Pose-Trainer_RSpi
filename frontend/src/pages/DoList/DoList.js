@@ -1,15 +1,26 @@
 import React from 'react';
 import './DoList.css';
+import dog from '../../utils/temp/dog.png';
+import warrior from '../../utils/temp/warrior.png';
+import cobra from '../../utils/temp/cobra.png';
+import triangle from '../../utils/temp/triangle.png';
+import tree from '../../utils/temp/tree.png';
+import chair from '../../utils/temp/chair.png';
+import shoulderStand from '../../utils/temp/sholderstand.png';
 
+const poseImage = document.getElementById("pose-image");
+const poseButtonName = document.getElementById("pose-button-name");
+
+const imageName = poseImage.src.split("/").pop().split(".")[0];
+poseButtonName.textContent = imageName;
 const yogaPoses = [
-  { name: 'Downward Dog', image: 'frontend/src/utils/temp/dog.png' },
-  { name: 'Warrior I', image: 'frontend/src/utils/temp/warrior.png' },
-  { name: 'Cobra', image: 'frontend/src/utils/temp/cobra.png' },
-  { name: 'Triangle', image: "frontend/src/utils/temp/triangle.png" },
-  { name: 'Tree', image: 'frontend/src/utils/temp/tree.png' },
-  { name: 'Bridge', image: 'path/to/image6' },
-  { name: 'Child\'s Pose', image: 'path/to/image7' },
-  { name: 'Shoulder Stand', image: 'path/to/image8' },
+  { name: 'Dog', image: dog },
+  { name: 'Warrior I', image: warrior },
+  { name: 'Cobra', image: cobra },
+  { name: 'Triangle', image: triangle },
+  { name: 'Tree', image: tree },
+  { name: 'Chair', image: chair },
+  { name: 'Shoulder Stand', image: shoulderStand },
 ];
 
 const dailyWorkoutSchedule = [
@@ -21,17 +32,20 @@ const dailyWorkoutSchedule = [
 const DoList = () => {
   return (
     <div className="do-list">
-      <h2>Yoga Poses</h2>
-      <ul className="yoga-poses">
-        {yogaPoses.map((pose, index) => (
-          <li key={index}>
-            <img src={pose.image} alt={pose.name} />
-            <p>{pose.name}</p>
-          </li>
-        ))}
-      </ul>
-
-      <h2>Daily Workout Schedule</h2>
+    <div className="columns">
+        <div className="left-column">
+          <h2 className='center'>Try now</h2>
+          <ul className="yoga-poses">
+            {yogaPoses.map((pose, index) => (
+              <li key={index} className="pose-button">
+                <img  id="pose-image" src={pose.image} alt={pose.name} />
+                <span id="pose-button-name" class="pose-button-name"></span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="right-column">
+        <h2>Progress</h2>
       <ul className="workout-schedule">
         {dailyWorkoutSchedule.map((workout, index) => (
           <li key={index} className={workout.completed ? 'completed' : ''}>
@@ -39,6 +53,8 @@ const DoList = () => {
           </li>
         ))}
       </ul>
+    </div>
+    </div>
     </div>
   );
 };

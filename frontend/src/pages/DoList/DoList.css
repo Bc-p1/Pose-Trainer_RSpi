@@ -1,3 +1,51 @@
+h2 {
+  text-align: center;
+}
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.left-column,
+.right-column {
+  flex: 1;
+  min-width: 45%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.pose-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px;
+}
+
+.pose-button-name {
+  margin-left: 10px;
+}
+
+.pose-button:hover {
+  background-color: #e0e0e0;
+}
+
+.yoga-poses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.yoga-poses-container {
+  margin-bottom: 40px;
+}
 .do-list {
     display: flex;
     flex-direction: column;
