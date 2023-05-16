@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Forgot from './pages/Forgot/Forgot'
 import Login from './pages/Login/Login'
 import Profile from './pages/Profile/Profile'
-import DoList from './pages/DoList/DoList'
 import Home from './pages/Home/Home'
 import Yoga from './pages/Yoga/Yoga'
 import About from './pages/About/About'
@@ -12,6 +11,7 @@ import Tutorials from './pages/Tutorials/Tutorials'
 import SignUpPage from './pages/Register/Register.js'
 import WelcomePage from './pages/WelcomePage/WelcomePage.js'
 import './App.css'
+import DoList from './pages/DoList/DoList'
 
 export default function App() {
   return (
@@ -24,7 +24,7 @@ export default function App() {
       <Routes>
         <Route path='/' element={<WelcomePage />}/>
         <Route path='/Register' element={<SignUpPage />}/>
-        <Route path='/Signin' element={<Login />}/>
+        <Route path='/Sign in' element={<Login />}/>
         <Route path='/DoList' element={<DoList />}/>
         <Route path='/Profile' element={<Profile />}/>
         <Route path='/Forgot' element={<Forgot />}/>

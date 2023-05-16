@@ -1,6 +1,6 @@
 
 .home-header {
-    background: linear-gradient(100deg, #374d39, #bb821a);
+    background: linear-gradient(100deg, #2e2e6d, #454a58);
     width: 100vw;
     height: 70px;
     display: flex;
@@ -16,7 +16,7 @@
   
   
 .home-container {
-    background: black
+    background: rgba(25, 24, 32, 0.747)
 }
 .header-btn:hover {
     border-color: white;

@@ -3,22 +3,22 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(100deg, #374d39, #bb821a);
+    background: linear-gradient(100deg,  #454a58, #2e2e6d);
   }
   
   .welcome-box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #2f3136;
+    background-color: #34486e93;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
   .app-icon {
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 300px;
     margin-bottom: 20px;
   }
   
@@ -28,7 +28,7 @@
   }
 
   .welcome-button {
-    background-color: #7289da;
+    background-color: #566085;
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -40,4 +40,30 @@
   
   .welcome-button:hover {
     background-color: #5b6eae;
+  }
+  .welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .welcome-box {
+    text-align: center;
+  }
+  
+  .btn-section {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .welcome-button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  .welcome-button-link {
+    text-decoration: none;
   }
