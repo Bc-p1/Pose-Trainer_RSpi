@@ -11,7 +11,6 @@ import Tutorials from './pages/Tutorials/Tutorials'
 import SignUpPage from './pages/Register/Register.js'
 import WelcomePage from './pages/WelcomePage/WelcomePage.js'
 import './App.css'
-import DoList from './pages/DoList/DoList'
 
 export default function App() {
   return (
@@ -25,7 +24,6 @@ export default function App() {
         <Route path='/' element={<WelcomePage />}/>
         <Route path='/Register' element={<SignUpPage />}/>
         <Route path='/Sign in' element={<Login />}/>
-        <Route path='/DoList' element={<DoList />}/>
         <Route path='/Profile' element={<Profile />}/>
         <Route path='/Forgot' element={<Forgot />}/>
         <Route path='/Login' element={<Home />}/>

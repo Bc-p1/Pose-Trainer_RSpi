@@ -1,39 +1,117 @@
-.profile-container { 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
-    background: linear-gradient(100deg, hsl(240, 40%, 30%), hsl(224, 20%, 40%));
-    color: #fff; 
-    padding: 20px; 
-    border-radius: 5px; 
-  } 
-   
-  .user-details { 
-    text-align: center; 
-  } 
-   
-  .user-details h1 { 
-    font-size: 36px; 
-    margin-bottom: 10px; 
-  } 
-   
-  .user-details p { 
-    font-size: 18px; 
-    margin-bottom: 5px; 
-  } 
-   
-  .workout-stats { 
-    margin-top: 20px; 
-    text-align: center; 
-  } 
-   
-  .workout-stats h2 { 
-    font-size: 24px; 
-    margin-bottom: 10px; 
-  } 
-   
-  .workout-stats p { 
-    font-size: 18px; 
-    margin-bottom: 5px; 
+.profile-container {
+  display: flex;
+ flex-direction: column;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.app-icon-container {
+  width: 10px;
+  height: 10px;
+  margin-bottom: 10px;
+}
+
+.app-icon {
+  width: 5%;
+  height: 5%;
+  object-fit: contain;
+  align-items: left;
+}
+
+.profile-photo-container {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-left: 70px;
+}
+
+.profile-details p {
+  margin: 10px 0;
+}
+
+.profile-details strong {
+  font: bold;
+}
+
+.menu-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.pose-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px;
+}
+
+.pose-button-name {
+  margin-left: 10px;
+}
+
+.pose-button:hover {
+  background-color: #e0e0e0;
+}
+
+.yoga-poses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.yoga-poses-container {
+  margin-bottom: 40px;
+}
+.yoga-poses,
+  .workout-schedule {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
+  
+  .yoga-poses li,
+  .workout-schedule li {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .yoga-poses img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  

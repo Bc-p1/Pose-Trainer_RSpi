@@ -28,7 +28,7 @@
     font-size: 44px;
     margin-left: 50px;
     color: white;
-    font-family: 'Kaushan Script', cursive;
+    font-family: 'Raleway', sans-serif
 }
 
 .home-main {
@@ -43,11 +43,11 @@
 }
 
 .description {
-    font-size: 66px;
+    font-size: 60px;
     color: white;
     text-align: center;
     margin: 0px;
-    margin-top: 10px;
+    margin-top: 20px;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 0.5px;
 }
